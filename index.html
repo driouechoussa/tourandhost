@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourandhost - Luxury Apartments in Marrakech</title>
+    <meta name="description"
+        content="Discover and book luxury apartments and riads in Marrakech. Modern amenities, authentic experiences, and concierge services.">
+    <meta name="keywords"
+        content="Marrakech, apartments, riad, vacation rental, luxury, property, Morocco, booking, rent, short-term , maroc , morocco">
+    <meta name="author" content="tourandhost">
+    <meta name="rebots" content="index , follow">
+
+    <!-- Poppins (english ...) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- pacifico  (english ...)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Tourandhost">
+    <meta property="og:description"
+        content="Discover and book luxury apartments and riads in Marrakech. Modern amenities, authentic experiences, and concierge services.">
+    <meta property="og:image" content="assets/images/hero1.jpg">
+    <meta property="og:url" content="https://www.tourandhost.com">
+    <meta property="og:type" content="website">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Tourandhost",
+      "url": "https://www.tourandhost.com",
+      "logo": "assets/images/logo.png",
+      "image": "assets/images/hero1.jpg",
+      "description": "Offering curated luxury property rentals in the heart of Marrakech.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jardin Majorelle",
+        "addressLocality": "Marrakech",
+        "addressCountry": "MA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+212-612-345678",
+        "contactType": "Customer Service"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-2 fixed-top " id="main-navbar">
+        <div class="container-fluid container-xl">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="#hero">
+                <img width="180" src="assets/images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" target="_blank" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" target="_blank" href="appartements.html">residences</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            destinations
+                        </a>
+                        <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item " href="#">prestigia, marrakech</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-auto">
+                    <!-- language dropdown  -->
+                    <div class="dropdown  lang-dropdown">
+                        <button class="btn border-0 dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <i class='bx bx-world'></i>
+
+                            <span class="lang-Selected">EN</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">en</a>
+                            <a class="dropdown-item" href="#">fr</a>
+                            <a class="dropdown-item" href="#">es</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="hero">
+        <video autoplay lay muted loop class="hero-video-bg">
+            <source src="assets/images/bgs/hero_bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container-xl text-center">
+            <h1 class="display-3 fw-bold my-3 animate__animated animate__fadeInUp">Carefully curated stayes to match
+                your lifestyle.</h1>
+            <a href="appartements.html" target="_blank"
+                class="btn btn-primary btn-lg mt-5 animate__animated animate__fadeInUp animate__delay-2s">Explore
+                Properties</a>
+        </div>
+    </header>
+
+    <section class="section-filter-search col-sm-12" id="filter-search">
+        <div class="container container-xl animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="filter-card p-4 rounded-3 shadow-sm">
+                <h2 class="h5 fw-bold mb-3">Find Your Perfect Stay</h2>
+                <form class="row g-3" id="property-filter-form">
+                    <div class="col-md-2">
+                        <label for="filterPrice" class="form-label">Price Range</label>
+                        <select id="filterPrice" class="form-select shadow-none">
+                            <option value="">Any</option>
+                            <option value="150">Below 150</option>
+                            <option value="300">150 - 300</option>
+                            <option value="500">300 - 500</option>
+                            <option value="501">Over 500</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="filterGuests" class="form-label">Guests</label>
+                        <select id="filterGuests" class="form-select shadow-none">
+                            <option value="">Any</option>
+                            <option value="2">1-2</option>
+                            <option value="4">3-4</option>
+                            <option value="6">5+</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="filterType" class="form-label">Property Type</label>
+                        <select id="filterType" class="form-select shadow-none">
+                            <option value="">Any</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Villa">Villa</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="checkInDate" class="form-label">Check-in</label>
+                        <input type="date" class="form-control shadow-none" id="checkInDate">
+                    </div>
+                    <div class="col-md-2 ">
+                        <label for="checkOutDate" class="form-label">Check-out</label>
+                        <input type="date" class="form-control shadow-none" id="checkOutDate">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submet" class="w-100 btn-primary rounded ">search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="about" class="py-5">
+            <div class="container container-xl">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="about-image-wrapper animate__animated animate__fadeInRight"
+                            data-animation-delay="0.5s">
+                            <img src="assets/images/" class="img-fluid rounded shadow-lg"
+                                alt="Team members of My Property Company in Marrakech" width="600" height="400"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 animate__animated animate__fadeInLeft" data-animation-delay="0.5s">
+                        <h2 class="section-title">About Our Company</h2>
+                        <p class="lead">From the heart of Marrakech to your doorstep, we're dedicated to crafting
+                            unforgettable stays. We manage a curated collection of luxury apartments and riads, ensuring
+                            every detail is perfect for your visit.</p>
+                        <a target="_blank" href="about.html" class="btn btn-outline-primary mt-3">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="apartments" class="py-5 bg-light">
+            <div class="container container-xl">
+                <div class="text-center mb-5 animate__animated animate__fadeInDown">
+                    <h2 class="section-title">Featured Apartments</h2>
+                    <p class="text-muted lead">Explore our hand-picked collection of properties.</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-4"
+                    id="apartment-cards-container">
+                    <div class="col">
+                        <div class="card apartment-card shadow-sm animate__animated animate__fadeInUp">
+                            <img src="assets/images/products/product_prestigia_1/prestigia_1.jpg" class="card-img-top apartment-card-img" alt="property cover" loading="lazy"
+                                width="400" height="250">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Prestigia Appartment 1</h5>
+                                <p class="card-text text-muted"><i class='bx bx-map me-1'></i> <span>Marrakech</span>
+                                </p>
+                                <div class="apartment-amenities d-flex justify-content-between mb-3">
+                                    <span class="badge rounded-pill text-bg-light"><i class='bx bx-user'></i>
+                                        <span>2</span> Guests</span>
+                                    <span class="badge rounded-pill text-bg-light"><i class='bx bxs-bed'></i>
+                                        <span>2</span> Bed</span>
+                                    <span class="badge rounded-pill text-bg-light"><i class='bx bxs-bath'></i>
+                                        <span>3</span> Bath</span>
+                                </div>
+                                <p class="card-text flex-grow-1 small">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vero nobis quae
+                                    consectetur commodi
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mb-3 mt-auto">
+                                    <span class="price-tag fw-bold"><span>1500</span> <span>MAD</span></span>
+                                    <span class="text-muted small">per night</span>
+                                </div>
+                                <div  class="d-grid gap-2">
+                                    <a target="_blank" href="product.html" class="btn btn-primary btn-sm book-now-btn">see more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="amenities" class="py-5">
+            <div class="container container-xl">
+                <div class="text-center mb-5 animate__animated animate__fadeInDown">
+                    <h2 class="section-title">Amenities You'll Love</h2>
+                    <p class="text-muted lead">We ensure every stay is comfortable and convenient.</p>
+                </div>
+                <div class="row text-center g-4" id="amenities-grid">
+                    <div class="col-lg-2 col-md-4 col-sm-6 d-flex align-items-stretch animate__animated animate__fadeInUp"
+                        data-animation-delay="0s">
+                        <div class="amenity-card w-100 p-4 rounded-3 shadow-sm">
+                            <i class='bx bx-wifi'></i>
+                            <h5 class="fw-bold">Free WiFi</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 d-flex align-items-stretch animate__animated animate__fadeInUp"
+                        data-animation-delay="0.2s">
+                        <div class="amenity-card w-100 p-4 rounded-3 shadow-sm">
+                            <i class='bx bx-wind'></i>
+                            <h5 class="fw-bold">Air Conditioning</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 d-flex align-items-stretch animate__animated animate__fadeInUp"
+                        data-animation-delay="0.4s">
+                        <div class="amenity-card w-100 p-4 rounded-3 shadow-sm">
+                            <i class='bx bx-chair'></i>
+                            <h5 class="fw-bold">Rooftop Terrace</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 d-flex align-items-stretch animate__animated animate__fadeInUp"
+                        data-animation-delay="0.6s">
+                        <div class="amenity-card w-100 p-4 rounded-3 shadow-sm">
+                            <i class='bx bx-swim'></i>
+                            <h5 class="fw-bold">Swimming Pool</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 d-flex align-items-stretch animate__animated animate__fadeInUp"
+                        data-animation-delay="0.8s">
+                        <div class="amenity-card w-100 p-4 rounded-3 shadow-sm">
+                            <i class='bx bxs-car'></i>
+                            <h5 class="fw-bold">Free Parking</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 d-flex align-items-stretch animate__animated animate__fadeInUp"
+                        data-animation-delay="1s">
+                        <div class="amenity-card w-100 p-4 rounded-3 shadow-sm">
+                            <i class='bx bxs-bell-ring'></i>
+                            <h5 class="fw-bold">Concierge Service</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+
+        <section id="faq" class="py-5">
+            <div class="container container-xl animate__animated animate__fadeInUp shadow-none">
+                <div class="text-center mb-5 shadow-none">
+                    <h2 class="section-title shadow-none">Frequently Asked Questions</h2>
+                    <p class="text-muted lead">We've got answers to your most common questions.</p>
+                </div>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item animate__animated animate__fadeInUp" data-animation-delay="0s">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the check-in and check-out time?
+                            </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our standard check-in time is from 3:00 PM, and check-out is by 11:00 AM. Early check-in
+                                or late check-out may be available upon request and based on availability.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item animate__animated animate__fadeInUp" data-animation-delay="0.2s">
+                        <h3 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed shadow-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Do you offer room services?
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we provide full room service to ensure our guests enjoy a comfortable and
+                                convenient stay. You can request meals, housekeeping, and other amenities directly to
+                                your room at any time during your stay
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item animate__animated animate__fadeInUp" data-animation-delay="0.4s">
+                        <h3 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed shadow-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Do you offer airport pickup?
+                            </button>
+                        </h3>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                               No, we don't provide airport pickup services. Our property is a private residence, not a hotel, so transportation is not included. However, we'd be happy to help you arrange a local taxi or transfer service if needed.
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="accordion-item animate__animated animate__fadeInUp" data-animation-delay="0.4s">
+                        <h3 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed shadow-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFoure">
+                                Is the property suitable for families?
+                            </button>
+                        </h3>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                            Absolutely. The property is spacious, secure, and designed to accommodate families comfortably.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container container-xl">
+                <div class="text-center mb-5 animate__animated animate__fadeInDown">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="text-muted lead">We're here to help you plan your perfect stay.</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 animate__animated animate__fadeInLeft" data-animation-delay="0.5s">
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" placeholder="Jhon Doe" class="form-control shadow-none" id="name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" placeholder="example@email.com" class="form-control shadow-none"
+                                    id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" placeholder="+212 6 00 00 00 00" class="form-control shadow-none"
+                                    id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea placeholder="What is in your mind ?" class="form-control shadow-none"
+                                    id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 animate__animated animate__fadeInRight" data-animation-delay="0.5s">
+                        <div class="contact-info">
+                            <p class="h5 fw-bold mb-3">Our Office</p>
+                            <p>
+                                <i class='bx bx-map me-2'></i>
+                                Prestigia, Marrakech, Morocco
+                            </p>
+                            <p>
+                                <i class='bx bx-phone me-2'></i>
+                                <a href="tel:+212612345678" class="text-decoration-none">+212 6 00 00 00 00</a>
+                            </p>
+                            <p>
+                                <i class='bx bx-envelope me-2'></i>
+                                <a href="mailto:info@tourandhost.com"
+                                    class="text-decoration-none text-lowercase">info@tourandhost.com</a>
+                            </p>
+                            <a href="https://wa.me/212612345678" target="_blank"
+                                class="btn btn-whatsapp btn-success mt-3">
+                                <i class='bx bxl-whatsapp'></i> <span>WhatsApp</span>
+                            </a>
+                            <div class="map-placeholder mt-4">
+                                <iframe
+                                    src="https://www.google.com/maps/@31.5662842,-7.9753372,9951m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer py-5 animate__animated animate__fadeInUp">
+        <div class="container container-xl">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Tourandhost</h5>
+                    <p class="text">Curating exceptional stays in the heart of Marrakech.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" target="_blank" class="social-icon"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class='bx bxl-tiktok'></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mt-3"><a href="#about" class="text-decoration-none text-capitalize">About Us</a></li>
+                        <li class="mt-3"><a href="#apartments"
+                                class="text-decoration-none text-capitalize">appartments</a></li>
+                        <li class="mt-3"><a href="#faq" class="text-decoration-none text-capitalize">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Contact Info</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mt-3"><i class='bx bx-map'></i> Marrakech, Morocco</li>
+                        <li class="mt-3"><i class='bx bx-phone'></i> +212 6 12 34 56 78</li>
+                        <li class="mt-3"><i class='bx bx-envelope'></i> info@tourandhost.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Newsletter</h5>
+                    <p class="text">Stay updated on our latest listings and offers.</p>
+                    <form class="input-group mb-3">
+                        <input type="email" class="form-control shadow-none" placeholder="Your email"
+                            aria-label="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center">
+                <p class="text">© <span id="year"></span> Tourandhost. All rights reserved.
+                <p class="text">Developed by <i class='bx bxs-heart'></i>
+                    <a href="https://www.driouechoussa.com" target="_blank"
+                        class="text-light text-lowercase">@driouechoussa</a>
+                </p>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You've selected to book: <strong id="modal-apt-title"></strong></p>
+                    <p>Price: <strong id="modal-apt-price"></strong> per night</p>
+                    <p>Guests: <strong id="modal-apt-guests"></strong></p>
+                    <p class="small text-muted">This is a demo. We'd collect your details here and a cleaning fee would
+                        be added. Full booking flow and payment integration would be developed in a production
+                        environment.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Proceed to Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // ==================================
+        // JS FOR MY PROPERTY COMPANY WEBSITE
+        // ==================================
+
+        // Data for apartments, testimonials, and carousel images
+        const apartments = [
+            {
+                id: 1,
+                title: "Riad Rooftop Suite",
+                location: "Gueliz",
+                priceMAD: 1200,
+                guests: 4,
+                bedrooms: 2,
+                bathrooms: 2,
+                type: "Riad",
+                image: "assets/images/apt1.jpg",
+                description: "A stunning rooftop suite with a private terrace and breathtaking views of the city. Modern Moroccan design with all the comforts of home.",
+                amenities: ["Free WiFi", "Private Terrace", "Concierge"],
+                availableFrom: "2025-09-20",
+                availableTo: "2026-03-30"
+            },
+            {
+                id: 2,
+                title: "Modern Oasis Apartment",
+                location: "Hivernage",
+                priceMAD: 850,
+                guests: 2,
+                bedrooms: 1,
+                bathrooms: 1,
+                type: "Apartment",
+                image: "assets/images/apt2.jpg",
+                description: "A sleek, contemporary apartment perfect for a couple's getaway. Located in the vibrant Hivernage district with access to a shared pool.",
+                amenities: ["Swimming Pool", "Air Conditioning", "Airport Pickup"],
+                availableFrom: "2025-10-15",
+                availableTo: "2026-05-20"
+            },
+            {
+                id: 3,
+                title: "Medina Secret Villa",
+                location: "Medina",
+                priceMAD: 2500,
+                guests: 8,
+                bedrooms: 4,
+                bathrooms: 3,
+                type: "Villa",
+                image: "assets/images/apt3.jpg",
+                description: "A spacious and secluded villa hidden in the heart of the old city. Features a private courtyard and traditional hammam.",
+                amenities: ["Private Courtyard", "Traditional Hammam", "Private Parking"],
+                availableFrom: "2025-11-01",
+                availableTo: "2026-07-10"
+            },
+            {
+                id: 4,
+                title: "Jardin Majorelle Flat",
+                location: "Jardin Majorelle",
+                priceMAD: 950,
+                guests: 3,
+                bedrooms: 2,
+                bathrooms: 1,
+                type: "Apartment",
+                image: "assets/images/apt4.jpg",
+                description: "A cozy and charming apartment just steps away from the famous Jardin Majorelle. Ideal for small families or friends.",
+                amenities: ["Rooftop Terrace", "Free WiFi", "Central Location"],
+                availableFrom: "2025-09-25",
+                availableTo: "2026-04-15"
+            }
+        ];
+
+        const testimonials = [
+            {
+                name: "Jessica L.",
+                location: "New York, USA",
+                quote: "Our stay was absolutely magical! The apartment was even more beautiful than the photos and the host was incredibly helpful. We can't wait to come back!",
+                rating: 5,
+                image: "assets/images/testimonial1.jpg"
+            },
+            {
+                name: "Omar B.",
+                location: "Paris, France",
+                quote: "Seamless booking process and a perfectly maintained riad. The concierge service made our trip effortless. Highly recommended!",
+                rating: 5,
+                image: "assets/images/testimonial2.jpg"
+            },
+            {
+                name: "Chloe & Mark",
+                location: "London, UK",
+                quote: "The location was unbeatable and the property was clean and spacious. The host provided great local tips which made our experience authentic and special.",
+                rating: 4,
+                image: "assets/images/testimonial3.jpg"
+            }
+        ];
+
+
+
+
+
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Language and currency switchers
+        document.getElementById('languageDropdown').parentElement.addEventListener('click', e => {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                currentLanguage = e.target.dataset.lang;
+                localStorage.setItem('language', currentLanguage);
+                updateLanguage();
+            }
+        });
+
+        document.getElementById('currencyDropdown').parentElement.addEventListener('click', e => {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                currentCurrency = e.target.dataset.currency;
+                localStorage.setItem('currency', currentCurrency);
+                updateCurrency();
+            }
+        });
+
+        // Filter form logic
+        document.getElementById('property-filter-form').addEventListener('change', () => {
+            const priceFilter = document.getElementById('filterPrice').value;
+            const guestsFilter = document.getElementById('filterGuests').value;
+            const typeFilter = document.getElementById('filterType').value;
+
+            const filtered = apartments.filter(apt => {
+                const priceCheck = !priceFilter || (priceFilter === '501' ? apt.priceMAD > 500 : (apt.priceMAD <= priceFilter && apt.priceMAD > (priceFilter - 150)));
+                const guestsCheck = !guestsFilter || apt.guests >= guestsFilter;
+                const typeCheck = !typeFilter || apt.type === typeFilter;
+                return priceCheck && guestsCheck && typeCheck;
+            });
+            renderApartmentCards(filtered);
+            // Re-initialize Intersection Observer for filtered cards
+            initIntersectionObserver();
+        });
+
+
+        // Booking modal content population
+        document.addEventListener('click', e => {
+            if (e.target.classList.contains('book-now-btn')) {
+                const aptId = e.target.dataset.aptId;
+                const apt = apartments.find(a => a.id == aptId);
+
+                if (apt) {
+                    document.getElementById('modal-apt-title').textContent = apt.title;
+                    document.getElementById('modal-apt-price').textContent = formatPrice(apt.priceMAD);
+                    document.getElementById('modal-apt-guests').textContent = apt.guests;
+                }
+            }
+        });
+
+        // Intersection Observer for Animate.css on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        function initIntersectionObserver() {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const delay = entry.target.dataset.animationDelay;
+                        if (delay) {
+                            entry.target.style.animationDelay = delay;
+                        }
+                        entry.target.classList.add('animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Select elements to observe
+            document.querySelectorAll('.animate__animated:not(.animate__fadeInLeft, .animate__fadeInUp, .animate__fadeInDown, .animate__fadeInRight)').forEach(el => observer.observe(el));
+        }
+
+        // Initial page load setup
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render dynamic content first
+            renderApartmentCards();
+            renderTestimonials();
+
+            // Initialize Bootstrap components
+
+            const testimonialCarousel = new bootstrap.Carousel(document.getElementById('testimonial-carousel'), {
+                interval: 7000,
+                ride: 'carousel',
+                pause: 'hover'
+            });
+
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Set initial language and currency
+            updateLanguage();
+            updateCurrency();
+
+            // Start Intersection Observer
+            initIntersectionObserver();
+
+            // Enable tooltips everywhere
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        });
+    </script>
+
+</body>
+
+</html>
