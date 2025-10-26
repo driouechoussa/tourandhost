@@ -1,0 +1,424 @@
+@import url(normalize.css);
+@import url(states.css);
+
+.container-xl {
+    width: 100vw;
+}
+
+.section-divider {
+    border-top: 1px solid var(--gray);
+    margin: 48px 0;
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-bg);
+    padding: 4px 0 4px 0;
+}
+
+.navbar-nav .nav-link,
+.nav-link .destinations_dropdown {
+    color: var(--text-color);
+    font-weight: var(--fw-normal);
+    margin: 0 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.lang-dropdown {
+    color: var(--text-color);
+    font-weight: var(--fw-normal);
+    margin: 0 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-bg);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.section-filter-search {
+    margin-top: -96px;
+    position: relative;
+    z-index: 10;
+}
+
+.filter-card {
+    background-color: var(--filter-card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px !important;
+    border: 1px solid #ffffff33;
+}
+
+.filter-card .form-control,
+.filter-card .form-select {
+    border-radius: 0.75rem;
+    border: var(--primary-border);
+}
+
+.apartment-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px !important;
+    background-color: var(--white);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.apartment-card-img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.card-body .card-title {
+    font-weight: var(--regualar);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.card-body .price-tag {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.card-description {
+    display: -webkit-box;        
+    -webkit-box-orient: vertical;
+    line-clamp: 4; 
+    -webkit-line-clamp: 4;       
+    overflow: hidden;               
+}
+
+.apartment-amenities .badge {
+    background-color: #e9ecef;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.apartment-amenities i {
+    color: var(--primary-color) !important;
+}
+
+.amenity-card {
+    transition: transform 0.3s ease;
+    border: 1px solid #e9ecef;
+    background-color: #fff;
+}
+
+.amenity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.amenity-card i {
+    color: var(--secondary-color);
+    font-size: var(--fs-huge) !important;
+    margin-bottom: 20px;
+}
+
+/* ==================================
+           ABOUT SECTION
+           ================================= */
+.middle_shape {
+    width: 50px;
+    background-color: var(--secondary-color);
+    transform: skew(20deg) translateX(100px) translateY(-1px);
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.vedio_area {
+    transform: skew(20deg) translateX(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vedio_controll_wapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vedio_controll_wapper .btn_play {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn_play i {
+    font-size: var(--fs-big);
+    color: var(--white);
+}
+
+
+.contact-info a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover,
+.contact-info i {
+    color: var(--primary-color);
+}
+
+.btn-whatsapp {
+    background-color: var(--green);
+    border-color: var(--green);
+    color: var(--white) !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 20px;
+    padding:10px;
+}
+
+.contact-info .btn-whatsapp:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+    color: var(--white);
+}
+
+.contact-info .btn-whatsapp i {
+    font-size: var(--fs-medium);
+    margin-right: 5px;
+    color: var(--white);
+}
+
+.contact-info .btn-whatsapp span {
+    font-size: var(--fs-small);
+    font-weight: var(--regualar);
+}
+
+.map-placeholder iframe {
+    border-radius: 10px !important;
+}
+
+/* ==================================
+           FOOTER
+           ================================= */
+.footer {
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+.footer-links a,
+.footer-links li {
+    color: var(--gray);
+    font-weight: var(--fw-light);
+    transition: color 0.3s ease;
+}
+
+.text {
+    color: var(--gray);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-small);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.contact-header {
+    padding: 128px 0;
+    text-align: center;
+}
+
+.contact-content {
+    margin-top: -64px;
+}
+.contact-form-card,
+.contact-info-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray);
+    padding: 0.75rem 1.25rem;
+}
+
+.bxs-heart {
+    color: var(--primary-color);
+    text-transform: lowercase;
+}
+
+/* ==================================
+           CONTACT PAGE
+================================= */
+
+.contact-info-card h4 {
+    color: var(--dark-color);
+}
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.contact-info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+    width: 30px; /* Ensures consistent spacing */
+}
+
+.map-container {
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.imagesCarousel {
+    height: 600px !important;
+    object-fit: cover !important;
+    margin-top: 50px;
+}
+
+/* ==================================
+           ABOUT PAGE
+================================= */
+
+.hero {
+    background: url("../images/bgs/bg_about.jpg") center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.39);
+    z-index: 1;
+}
+
+.hero .container {
+    z-index: 2;
+    position: relative;
+}
+
+.value-icon i {
+    font-size: var(--fs-normal);
+    color: var(--secondary-color);
+}
+
+.property-title {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-bold);
+    color: var(--secondary-color);
+    text-shadow: none;
+}
+
+.description-area {
+    background: var(--white);
+    box-shadow: var(--primary-box-shadow);
+    border-radius: 5px;
+}
+
+.description-area h4 {
+    color: var(--secondary-color);
+}
+
+.description-area p {
+    color: var(--bs-gray);
+    line-height: 1.6;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--fs-medium);
+    background: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-box {
+    background: var(--white);
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: var(--primary-box-shadow);
+}
+
+.price-area {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-normal);
+    color: var(--bs-gray);
+}
+
+.booking-title {
+    font-weight: var(--fw-bold);
+    color: var(--secondary-color);
+    text-shadow: none;
+}
+
+
+
